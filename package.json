@@ -1,0 +1,8 @@
+{
+  "name": "doko-hotel",
+  "version": "1.0.0",
+  "description": "Doko International Hotel website",
+  "dependencies": {
+    "@supabase/supabase-js": "^2.39.0"
+  }
+}
