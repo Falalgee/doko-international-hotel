@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html class="scroll-smooth light" lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>About Us – Doko International Hotel</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script src="js/tailwind.config.js" id="tailwind-config"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body class="bg-background text-on-surface font-body-md antialiased min-h-screen flex flex-col selection:bg-secondary/20 selection:text-on-secondary">
+    <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-primary text-white px-5 py-3 rounded-full z-[100] font-medium">Skip to main content</a>
+
+    <nav class="fixed top-0 w-full z-50 glass-nav border-b border-outline-variant/10">
+        <div class="flex justify-between items-center px-6 md:px-12 py-5 max-w-[1440px] mx-auto">
+            <a class="font-headline-sm text-2xl font-semibold tracking-tight text-primary hover:text-primary/80 transition-colors" href="index.html">Doko International</a>
+            <div class="hidden md:flex items-center gap-12 text-sm" id="desktop-nav-links">
+                <a class="nav-link text-on-surface/80 font-medium hover:text-secondary transition-colors duration-300" href="index.html">Home</a>
+                <a class="nav-link text-on-surface/80 font-medium hover:text-secondary transition-colors duration-300" href="rooms.html">Rooms</a>
+                <a class="nav-link text-on-surface/80 font-medium hover:text-secondary transition-colors duration-300" href="gallery.html">Gallery</a>
+                <a class="nav-link text-on-surface/80 font-medium hover:text-secondary transition-colors duration-300" href="booking.html">Booking</a>
+                <a class="nav-link text-on-surface/80 font-medium hover:text-secondary transition-colors duration-300" href="about.html">About</a>
+                <a class="nav-link text-on-surface/80 font-medium hover:text-secondary transition-colors duration-300" href="contact.html">Contact</a>
+                <a href="booking.html" class="btn-primary px-6 py-2.5 text-sm">Book Now</a>
+            </div>
+            <button aria-label="Toggle menu" class="md:hidden text-primary p-2" id="mobile-menu-toggle"><span class="material-symbols-outlined text-3xl">menu</span></button>
+        </div>
+        <div class="md:hidden hidden bg-surface border-t border-outline-variant/10 px-6 py-8 space-y-6" id="mobile-menu">
+            <a class="block text-on-surface font-medium text-lg hover:text-secondary transition-colors" href="index.html">Home</a>
+            <a class="block text-on-surface font-medium text-lg hover:text-secondary transition-colors" href="rooms.html">Rooms</a>
+            <a class="block text-on-surface font-medium text-lg hover:text-secondary transition-colors" href="gallery.html">Gallery</a>
+            <a class="block text-on-surface font-medium text-lg hover:text-secondary transition-colors" href="booking.html">Booking</a>
+            <a class="block text-on-surface font-medium text-lg hover:text-secondary transition-colors" href="about.html">About</a>
+            <a class="block text-on-surface font-medium text-lg hover:text-secondary transition-colors" href="contact.html">Contact</a>
+            <a href="booking.html" class="block w-full text-center btn-primary py-4 text-base">Book Now</a>
+        </div>
+    </nav>
+
+    <section class="pt-32 md:pt-44 pb-16 md:pb-24 px-6 md:px-12 max-w-[1440px] mx-auto">
+        <p class="text-secondary font-medium tracking-widest uppercase text-xs mb-6">Our Heritage</p>
+        <h1 class="font-headline-md text-5xl md:text-7xl text-primary mb-6">About Doko International</h1>
+        <p class="text-on-surface-variant max-w-3xl text-lg md:text-xl leading-relaxed">A beacon of refined hospitality in Minna since 1998 — blending local heritage with world‑class standards.</p>
+    </section>
+
+    <main id="main-content" class="flex-grow px-6 md:px-12 max-w-[1440px] mx-auto pb-32 md:pb-40">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-24 mb-32 md:mb-40">
+            <div class="lg:col-span-5 flex flex-col gap-10">
+                <p class="text-secondary font-medium tracking-widest uppercase text-xs mb-6">Since 1998</p>
+                <h2 class="font-headline-md text-4xl md:text-5xl text-primary mb-6">Our story</h2>
+                <div class="flex flex-wrap gap-10">
+                    <div><span class="block text-5xl font-bold text-primary">550+</span><span class="text-sm text-on-surface-variant uppercase tracking-wider mt-1 block">Reviews</span></div>
+                    <div><span class="block text-5xl font-bold text-primary">5<span class="text-3xl text-secondary ml-2">★</span></span><span class="text-sm text-on-surface-variant uppercase tracking-wider mt-1 block">Rating</span></div>
+                    <div><span class="block text-5xl font-bold text-primary">24h</span><span class="text-sm text-on-surface-variant uppercase tracking-wider mt-1 block">Service</span></div>
+                </div>
+            </div>
+            <div class="lg:col-span-6 lg:col-start-7 flex flex-col gap-8">
+                <p class="text-lg md:text-xl text-on-surface-variant leading-relaxed">Doko International Hotel opened its doors in 1998 with a vision to redefine hospitality in Niger State. Over two decades later, we remain a family‑run establishment where every guest is treated with genuine warmth and attention to detail.</p>
+                <p class="text-lg md:text-xl text-on-surface-variant leading-relaxed">Our design blends contemporary comfort with subtle nods to local heritage — from hand‑crafted furnishings to curated art. Whether you’re here for business, a family gathering, or a peaceful retreat, we create an atmosphere of understated luxury.</p>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10 mb-32 md:mb-40">
+            <div class="premium-card bg-white p-10 md:p-14 rounded-2xl border border-surface-variant/10 shadow-sm"><div class="w-14 h-14 rounded-full bg-surface-container-low flex items-center justify-center mb-8"><span class="material-symbols-outlined text-3xl text-secondary">flag</span></div><h3 class="font-semibold text-primary text-2xl mb-4">Our mission</h3><p class="text-on-surface-variant leading-relaxed text-base">To provide exceptional hospitality that seamlessly blends international standards with authentic Nigerian warmth. We strive to make every stay memorable through personalised service, immaculate comfort, and attention to the smallest details.</p></div>
+            <div class="premium-card bg-white p-10 md:p-14 rounded-2xl border border-surface-variant/10 shadow-sm"><div class="w-14 h-14 rounded-full bg-surface-container-low flex items-center justify-center mb-8"><span class="material-symbols-outlined text-3xl text-secondary">visibility</span></div><h3 class="font-semibold text-primary text-2xl mb-4">Our vision</h3><p class="text-on-surface-variant leading-relaxed text-base">To be the most trusted and admired hotel in North‑Central Nigeria — a destination where heritage, comfort, and innovation come together to create unforgettable experiences for every guest who walks through our doors.</p></div>
+        </div>
+
+        <div class="text-center mb-20"><p class="text-secondary font-medium tracking-widest uppercase text-xs mb-6">Why choose us</p><h2 class="font-headline-md text-4xl md:text-5xl text-primary mb-6">What sets us apart</h2><p class="text-on-surface-variant max-w-2xl mx-auto text-lg md:text-xl leading-relaxed">We go beyond a place to sleep — we craft experiences that linger long after checkout.</p></div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div class="premium-card p-8 bg-white rounded-2xl border border-surface-variant/10 shadow-sm text-center"><div class="w-14 h-14 rounded-full bg-surface-container-low flex items-center justify-center mx-auto mb-6"><span class="material-symbols-outlined text-3xl text-secondary">star</span></div><h4 class="font-semibold text-primary text-lg mb-2">Consistent quality</h4><p class="text-sm text-on-surface-variant leading-relaxed">550+ glowing reviews and a 5‑star rating speak for themselves.</p></div>
+            <div class="premium-card p-8 bg-white rounded-2xl border border-surface-variant/10 shadow-sm text-center"><div class="w-14 h-14 rounded-full bg-surface-container-low flex items-center justify-center mx-auto mb-6"><span class="material-symbols-outlined text-3xl text-secondary">location_on</span></div><h4 class="font-semibold text-primary text-lg mb-2">Prime location</h4><p class="text-sm text-on-surface-variant leading-relaxed">Perfectly situated at City Gate Mx, Minna — your gateway to the city.</p></div>
+            <div class="premium-card p-8 bg-white rounded-2xl border border-surface-variant/10 shadow-sm text-center"><div class="w-14 h-14 rounded-full bg-surface-container-low flex items-center justify-center mx-auto mb-6"><span class="material-symbols-outlined text-3xl text-secondary">handshake</span></div><h4 class="font-semibold text-primary text-lg mb-2">Local expertise</h4><p class="text-sm text-on-surface-variant leading-relaxed">Deep roots in Minna — we connect you with authentic experiences.</p></div>
+            <div class="premium-card p-8 bg-white rounded-2xl border border-surface-variant/10 shadow-sm text-center"><div class="w-14 h-14 rounded-full bg-surface-container-low flex items-center justify-center mx-auto mb-6"><span class="material-symbols-outlined text-3xl text-secondary">favorite</span></div><h4 class="font-semibold text-primary text-lg mb-2">Family‑run warmth</h4><p class="text-sm text-on-surface-variant leading-relaxed">Personalised care from a team that treats you like family.</p></div>
+        </div>
+        <div class="mt-24 text-center">
+            <p class="text-secondary font-medium tracking-widest uppercase text-xs mb-6">Experience the difference</p>
+            <h2 class="font-headline-md text-4xl md:text-5xl text-primary mb-6">Ready to stay with us?</h2>
+            <p class="text-on-surface-variant max-w-xl mx-auto text-lg md:text-xl mb-12 leading-relaxed">We look forward to welcoming you.</p>
+            <a href="booking.html" class="btn-primary inline-flex items-center gap-4 px-12 py-5 text-lg"><span class="material-symbols-outlined">calendar_month</span> Make a reservation</a>
+        </div>
+    </main>
+
+    <footer class="bg-surface-container-low pt-28 pb-16 px-6 md:px-12 border-t border-outline-variant/10">
+        <div class="max-w-[1440px] mx-auto grid grid-cols-1 md:grid-cols-12 gap-16">
+            <div class="md:col-span-5 flex flex-col gap-8"><span class="font-headline-md text-4xl text-primary">Doko International</span><p class="text-on-surface-variant max-w-xs leading-relaxed text-base">Refined hospitality bridging heritage and modern luxury in the heart of Minna.</p><p class="text-sm text-on-surface-variant/70 mt-2">© 2026 Doko International Hotel. All rights reserved.</p></div>
+            <div class="md:col-span-4 md:col-start-7 flex flex-col gap-6"><h4 class="font-semibold text-primary uppercase tracking-widest text-xs">Pages</h4><ul class="space-y-4"><li><a class="text-on-surface-variant hover:text-secondary transition-colors text-base" href="index.html">Home</a></li><li><a class="text-on-surface-variant hover:text-secondary transition-colors text-base" href="rooms.html">Rooms</a></li><li><a class="text-on-surface-variant hover:text-secondary transition-colors text-base" href="gallery.html">Gallery</a></li><li><a class="text-on-surface-variant hover:text-secondary transition-colors text-base" href="booking.html">Booking</a></li><li><a class="text-on-surface-variant hover:text-secondary transition-colors text-base" href="about.html">About</a></li><li><a class="text-on-surface-variant hover:text-secondary transition-colors text-base" href="contact.html">Contact</a></li></ul></div>
+            <div class="md:col-span-3 flex flex-col gap-6"><h4 class="font-semibold text-primary uppercase tracking-widest text-xs">Connect</h4><div class="flex gap-5"><a class="w-11 h-11 rounded-full border border-secondary/20 flex items-center justify-center text-secondary hover:bg-secondary hover:text-white transition-all" href="#" aria-label="Facebook"><svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"/></svg></a><a class="w-11 h-11 rounded-full border border-secondary/20 flex items-center justify-center text-secondary hover:bg-secondary hover:text-white transition-all" href="#" aria-label="Instagram"><svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></a></div></div>
+        </div>
+    </footer>
+    <div class="fixed bottom-10 right-10 z-50"><a href="https://wa.me/2348038134832?text=Hello%20Doko%20International%20Hotel%2C%20I%20would%20like%20to%20make%20a%20booking." target="_blank" rel="noopener noreferrer" aria-label="Contact on WhatsApp" class="bg-secondary text-white rounded-full p-4 shadow-lg hover:shadow-xl hover:scale-105 transition-all flex items-center gap-2 group"><svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg><span class="hidden group-hover:inline-block text-sm font-medium whitespace-nowrap pr-1">WhatsApp</span></a></div>
+    <script src="js/main.js"></script>
+</body>
+</html>

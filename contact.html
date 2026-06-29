@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html class="scroll-smooth light" lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Contact – Doko International Hotel</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script src="js/tailwind.config.js" id="tailwind-config"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body class="bg-background text-on-surface font-body-md antialiased min-h-screen flex flex-col selection:bg-secondary/20 selection:text-on-secondary">
+    <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-primary text-white px-5 py-3 rounded-full z-[100] font-medium">Skip to main content</a>
+
+    <!-- NAVIGATION -->
+    <nav class="fixed top-0 w-full z-50 glass-nav border-b border-outline-variant/10">
+        <div class="flex justify-between items-center px-6 md:px-12 py-5 max-w-[1440px] mx-auto">
+            <a class="font-headline-sm text-2xl font-semibold tracking-tight text-primary hover:text-primary/80 transition-colors" href="index.html">Doko International</a>
+            <div class="hidden md:flex items-center gap-12 text-sm" id="desktop-nav-links">
+                <a class="nav-link text-on-surface/80 font-medium hover:text-secondary transition-colors duration-300" href="index.html">Home</a>
+                <a class="nav-link text-on-surface/80 font-medium hover:text-secondary transition-colors duration-300" href="rooms.html">Rooms</a>
+                <a class="nav-link text-on-surface/80 font-medium hover:text-secondary transition-colors duration-300" href="gallery.html">Gallery</a>
+                <a class="nav-link text-on-surface/80 font-medium hover:text-secondary transition-colors duration-300" href="booking.html">Booking</a>
+                <a class="nav-link text-on-surface/80 font-medium hover:text-secondary transition-colors duration-300" href="about.html">About</a>
+                <a class="nav-link text-on-surface/80 font-medium hover:text-secondary transition-colors duration-300" href="contact.html">Contact</a>
+                <a href="booking.html" class="btn-primary px-6 py-2.5 text-sm">Book Now</a>
+            </div>
+            <button aria-label="Toggle menu" class="md:hidden text-primary p-2" id="mobile-menu-toggle"><span class="material-symbols-outlined text-3xl">menu</span></button>
+        </div>
+        <div class="md:hidden hidden bg-surface border-t border-outline-variant/10 px-6 py-8 space-y-6" id="mobile-menu">
+            <a class="block text-on-surface font-medium text-lg hover:text-secondary transition-colors" href="index.html">Home</a>
+            <a class="block text-on-surface font-medium text-lg hover:text-secondary transition-colors" href="rooms.html">Rooms</a>
+            <a class="block text-on-surface font-medium text-lg hover:text-secondary transition-colors" href="gallery.html">Gallery</a>
+            <a class="block text-on-surface font-medium text-lg hover:text-secondary transition-colors" href="booking.html">Booking</a>
+            <a class="block text-on-surface font-medium text-lg hover:text-secondary transition-colors" href="about.html">About</a>
+            <a class="block text-on-surface font-medium text-lg hover:text-secondary transition-colors" href="contact.html">Contact</a>
+            <a href="booking.html" class="block w-full text-center btn-primary py-4 text-base">Book Now</a>
+        </div>
+    </nav>
+
+    <!-- PAGE HEADER -->
+    <section class="pt-32 md:pt-44 pb-16 md:pb-24 px-6 md:px-12 max-w-[1440px] mx-auto text-center">
+        <p class="text-secondary font-medium tracking-widest uppercase text-xs mb-6">Get in touch</p>
+        <h1 class="font-headline-md text-5xl md:text-7xl text-primary mb-6">Contact us</h1>
+        <p class="text-on-surface-variant max-w-2xl mx-auto text-lg md:text-xl leading-relaxed">We’d love to hear from you. Reach out via phone, WhatsApp, email, or the form below.</p>
+    </section>
+
+    <!-- CONTACT DETAILS + MAP -->
+    <main id="main-content" class="flex-grow px-6 md:px-12 max-w-[1440px] mx-auto pb-32 md:pb-40">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-24 mb-32 md:mb-40">
+            <div class="lg:col-span-5 flex flex-col gap-10">
+                <div class="space-y-8">
+                    <div class="flex gap-4"><div class="w-12 h-12 rounded-full bg-surface-container-low flex items-center justify-center flex-shrink-0"><span class="material-symbols-outlined text-secondary text-2xl">location_on</span></div><div><h3 class="font-semibold text-primary text-lg mb-1">Address</h3><p class="text-on-surface-variant leading-relaxed">City Gate Mx, Minna 920101<br>Niger State, Nigeria</p></div></div>
+                    <div class="flex gap-4"><div class="w-12 h-12 rounded-full bg-surface-container-low flex items-center justify-center flex-shrink-0"><span class="material-symbols-outlined text-secondary text-2xl">call</span></div><div><h3 class="font-semibold text-primary text-lg mb-1">Phone / WhatsApp</h3><a href="tel:+2348038134832" class="text-on-surface-variant hover:text-secondary transition-colors">+234 803 813 4832</a><div class="mt-2"><a href="https://wa.me/2348038134832" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-[#25D366] font-medium text-sm hover:underline"><svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg> Chat on WhatsApp</a></div></div></div>
+                    <div class="flex gap-4"><div class="w-12 h-12 rounded-full bg-surface-container-low flex items-center justify-center flex-shrink-0"><span class="material-symbols-outlined text-secondary text-2xl">mail</span></div><div><h3 class="font-semibold text-primary text-lg mb-1">Email</h3><a href="mailto:hello@dokointernational.com" class="text-on-surface-variant hover:text-secondary transition-colors break-all">hello@dokointernational.com</a></div></div>
+                </div>
+                <div class="bg-surface-container-low rounded-2xl p-8 mt-4"><h4 class="font-semibold text-primary text-lg mb-3">Ready to book?</h4><p class="text-sm text-on-surface-variant mb-6">Skip the form and make a reservation in seconds.</p><a href="booking.html" class="btn-primary inline-flex items-center gap-3 px-8 py-4 text-base"><span class="material-symbols-outlined">calendar_month</span> Book a room</a></div>
+            </div>
+            <div class="lg:col-span-7">
+                <div class="premium-card overflow-hidden rounded-2xl border border-surface-variant/10 shadow-sm h-full min-h-[400px] lg:min-h-full">
+                    <iframe src="https://www.google.com/maps?q=Doko+International+Hotel+Minna&output=embed" width="100%" height="100%" style="border:0; min-height: 450px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Doko International Hotel Location" class="w-full h-full"></iframe>
+                </div>
+            </div>
+        </div>
+
+        <!-- CONTACT FORM -->
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-16"><p class="text-secondary font-medium tracking-widest uppercase text-xs mb-6">Send a message</p><h2 class="font-headline-md text-4xl md:text-5xl text-primary mb-6">We’re listening</h2><p class="text-on-surface-variant text-lg md:text-xl leading-relaxed">Have a question or special request? Drop us a line.</p></div>
+            <div class="premium-card bg-white p-8 md:p-16 rounded-2xl border border-surface-variant/10 shadow-sm">
+                <form id="contact-form" name="contact-form" method="POST" netlify class="space-y-10">
+                    <input type="hidden" name="success" value="/thank-you.html">
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-10">
+                        <div><label class="block text-sm font-medium text-primary mb-2">Full name <span class="text-error">*</span></label><input class="luxury-input" id="contact-name" name="name" placeholder="e.g. Amina Bello" required type="text" /></div>
+                        <div><label class="block text-sm font-medium text-primary mb-2">Email address <span class="text-error">*</span></label><input class="luxury-input" id="contact-email" name="email" placeholder="e.g. amina@example.com" required type="email" /></div>
+                    </div>
+                    <div><label class="block text-sm font-medium text-primary mb-2">Subject <span class="text-error">*</span></label><input class="luxury-input" id="contact-subject" name="subject" placeholder="e.g. Wedding enquiry, Group booking" required type="text" /></div>
+                    <div><label class="block text-sm font-medium text-primary mb-2">Message <span class="text-error">*</span></label><textarea class="luxury-input min-h-[160px] resize-y" id="contact-message" name="message" placeholder="Tell us how we can help you…" required></textarea></div>
+
+                    <div class="flex flex-col sm:flex-row gap-6">
+                        <button type="button" id="contact-whatsapp-btn" class="flex-1 flex items-center justify-center gap-3 bg-[#25D366] text-white font-medium text-base py-4 rounded-full hover:bg-[#128C7E] transition-all shadow-sm hover:shadow-md"><svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg> Send via WhatsApp</button>
+                        <button type="submit" class="flex-1 flex items-center justify-center gap-3 btn-primary py-4 text-base"><svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg> Send message (email)</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-surface-container-low pt-28 pb-16 px-6 md:px-12 border-t border-outline-variant/10">
+        <div class="max-w-[1440px] mx-auto grid grid-cols-1 md:grid-cols-12 gap-16">
+            <div class="md:col-span-5 flex flex-col gap-8"><span class="font-headline-md text-4xl text-primary">Doko International</span><p class="text-on-surface-variant max-w-xs leading-relaxed text-base">Refined hospitality bridging heritage and modern luxury in the heart of Minna.</p><p class="text-sm text-on-surface-variant/70 mt-2">© 2026 Doko International Hotel. All rights reserved.</p></div>
+            <div class="md:col-span-4 md:col-start-7 flex flex-col gap-6"><h4 class="font-semibold text-primary uppercase tracking-widest text-xs">Pages</h4><ul class="space-y-4"><li><a class="text-on-surface-variant hover:text-secondary transition-colors text-base" href="index.html">Home</a></li><li><a class="text-on-surface-variant hover:text-secondary transition-colors text-base" href="rooms.html">Rooms</a></li><li><a class="text-on-surface-variant hover:text-secondary transition-colors text-base" href="gallery.html">Gallery</a></li><li><a class="text-on-surface-variant hover:text-secondary transition-colors text-base" href="booking.html">Booking</a></li><li><a class="text-on-surface-variant hover:text-secondary transition-colors text-base" href="about.html">About</a></li><li><a class="text-on-surface-variant hover:text-secondary transition-colors text-base" href="contact.html">Contact</a></li></ul></div>
+            <div class="md:col-span-3 flex flex-col gap-6"><h4 class="font-semibold text-primary uppercase tracking-widest text-xs">Connect</h4><div class="flex gap-5"><a class="w-11 h-11 rounded-full border border-secondary/20 flex items-center justify-center text-secondary hover:bg-secondary hover:text-white transition-all" href="#" aria-label="Facebook"><svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"/></svg></a><a class="w-11 h-11 rounded-full border border-secondary/20 flex items-center justify-center text-secondary hover:bg-secondary hover:text-white transition-all" href="#" aria-label="Instagram"><svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></a></div></div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp FAB -->
+    <div class="fixed bottom-10 right-10 z-50">
+        <a href="https://wa.me/2348038134832?text=Hello%20Doko%20International%20Hotel%2C%20I%20would%20like%20to%20make%20a%20booking." target="_blank" rel="noopener noreferrer" aria-label="Contact on WhatsApp" class="bg-secondary text-white rounded-full p-4 shadow-lg hover:shadow-xl hover:scale-105 transition-all flex items-center gap-2 group"><svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg><span class="hidden group-hover:inline-block text-sm font-medium whitespace-nowrap pr-1">WhatsApp</span></a>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script>
+        const hotelWhatsApp = '2348038134832';
+        const whatsappBtn = document.getElementById('contact-whatsapp-btn');
+        const contactForm = document.getElementById('contact-form');
+
+        whatsappBtn.addEventListener('click', () => {
+            if (!contactForm.checkValidity()) {
+                contactForm.reportValidity();
+                return;
+            }
+            const name = document.getElementById('contact-name').value.trim();
+            const email = document.getElementById('contact-email').value.trim();
+            const subject = document.getElementById('contact-subject').value.trim();
+            const message = document.getElementById('contact-message').value.trim();
+            let msg = `Hello Doko International Hotel,\n\n*Name:* ${name}\n*Email:* ${email}\n*Subject:* ${subject}\n*Message:* ${message}\n\nThank you.`;
+            window.open(`https://wa.me/${hotelWhatsApp}?text=${encodeURIComponent(msg)}`, '_blank');
+        });
+    </script>
+</body>
+</html>

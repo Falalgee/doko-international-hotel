@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html class="scroll-smooth light" lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Doko International Hotel – Minna's Gateway Hotel</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script src="js/tailwind.config.js" id="tailwind-config"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body class="bg-background text-on-surface font-body-md antialiased min-h-screen flex flex-col selection:bg-secondary/20 selection:text-on-secondary">
+
+    <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-primary text-white px-5 py-3 rounded-full z-[100] font-medium">Skip to main content</a>
+
+    <!-- ===== NAVIGATION ===== -->
+    <nav class="fixed top-0 w-full z-50 glass-nav border-b border-outline-variant/10">
+        <div class="flex justify-between items-center px-6 md:px-12 py-5 max-w-[1440px] mx-auto">
+            <a class="font-headline-sm text-2xl font-semibold tracking-tight text-primary hover:text-primary/80 transition-colors" href="index.html">Doko International</a>
+            <div class="hidden md:flex items-center gap-12 text-sm" id="desktop-nav-links">
+                <a class="nav-link text-on-surface/80 font-medium hover:text-secondary transition-colors duration-300" href="index.html">Home</a>
+                <a class="nav-link text-on-surface/80 font-medium hover:text-secondary transition-colors duration-300" href="rooms.html">Rooms</a>
+                <a class="nav-link text-on-surface/80 font-medium hover:text-secondary transition-colors duration-300" href="gallery.html">Gallery</a>
+                <a class="nav-link text-on-surface/80 font-medium hover:text-secondary transition-colors duration-300" href="booking.html">Booking</a>
+                <a class="nav-link text-on-surface/80 font-medium hover:text-secondary transition-colors duration-300" href="about.html">About</a>
+                <a class="nav-link text-on-surface/80 font-medium hover:text-secondary transition-colors duration-300" href="contact.html">Contact</a>
+                <a href="booking.html" class="btn-primary px-6 py-2.5 text-sm">Book Now</a>
+            </div>
+            <button aria-label="Toggle menu" class="md:hidden text-primary p-2" id="mobile-menu-toggle"><span class="material-symbols-outlined text-3xl">menu</span></button>
+        </div>
+        <div class="md:hidden hidden bg-surface border-t border-outline-variant/10 px-6 py-8 space-y-6" id="mobile-menu">
+            <a class="block text-on-surface font-medium text-lg hover:text-secondary transition-colors" href="index.html">Home</a>
+            <a class="block text-on-surface font-medium text-lg hover:text-secondary transition-colors" href="rooms.html">Rooms</a>
+            <a class="block text-on-surface font-medium text-lg hover:text-secondary transition-colors" href="gallery.html">Gallery</a>
+            <a class="block text-on-surface font-medium text-lg hover:text-secondary transition-colors" href="booking.html">Booking</a>
+            <a class="block text-on-surface font-medium text-lg hover:text-secondary transition-colors" href="about.html">About</a>
+            <a class="block text-on-surface font-medium text-lg hover:text-secondary transition-colors" href="contact.html">Contact</a>
+            <a href="booking.html" class="block w-full text-center btn-primary py-4 text-base">Book Now</a>
+        </div>
+    </nav>
+
+    <!-- ===== HERO ===== -->
+    <header class="relative h-[80vh] md:h-[100vh] w-full overflow-hidden" id="hero">
+        <div class="absolute inset-0 z-0 overflow-hidden">
+            <div class="absolute inset-0 bg-cover bg-center hero-bg-animate" style="background-image: url('https://res.cloudinary.com/dvpt87rho/image/upload/v1782231527/file_00000000380c71f4b1207c41ab357252_tv6o7x.png')"></div>
+        </div>
+        <div class="absolute inset-0 hero-overlay z-10"></div>
+        <div class="relative z-20 flex items-end pb-32 md:pb-40 h-full px-6 md:px-12 max-w-[1440px] mx-auto">
+            <div class="max-w-3xl">
+                <h1 class="font-display-lg-mobile md:font-display-lg text-7xl md:text-8xl lg:text-9xl text-white leading-[0.9] tracking-tight" style="text-shadow: 0 4px 20px rgba(0,0,0,0.4);">Minna's<br>Gateway Hotel</h1>
+                <p class="text-white/80 text-xl md:text-2xl mt-6 max-w-xl font-light">Refined hospitality since 1998</p>
+            </div>
+        </div>
+    </header>
+
+    <main id="main-content" class="flex-grow">
+        <!-- WELCOME -->
+        <section class="pt-32 md:pt-44 pb-12 md:pb-20 px-6 md:px-12 max-w-[1440px] mx-auto text-center">
+            <p class="text-secondary font-medium tracking-widest uppercase text-xs mb-6">Welcome</p>
+            <h2 class="font-headline-md text-4xl md:text-5xl text-primary mb-6">Your home in Minna</h2>
+            <p class="text-on-surface-variant max-w-3xl mx-auto text-lg md:text-xl leading-relaxed">Experience the warmth of Northern Nigerian hospitality paired with international standards.</p>
+        </section>
+
+        <!-- INTRODUCTION -->
+        <section class="py-16 md:py-24 px-6 md:px-12 max-w-[1440px] mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20 items-start">
+                <div class="lg:col-span-5 flex flex-col gap-8">
+                    <p class="text-secondary font-medium tracking-wide uppercase text-sm">Since 1998</p>
+                    <h2 class="font-display-lg-mobile md:font-display-lg text-4xl md:text-5xl text-primary leading-none">Our Story</h2>
+                    <div class="flex flex-wrap gap-8 mt-4">
+                        <div><span class="block text-4xl font-bold text-primary">550+</span><span class="text-sm text-on-surface-variant uppercase tracking-wider">Reviews</span></div>
+                        <div><span class="block text-4xl font-bold text-primary">5<span class="text-2xl text-secondary ml-1">★</span></span><span class="text-sm text-on-surface-variant uppercase tracking-wider">Rating</span></div>
+                        <div><span class="block text-4xl font-bold text-primary">24h</span><span class="text-sm text-on-surface-variant uppercase tracking-wider">Service</span></div>
+                    </div>
+                </div>
+                <div class="lg:col-span-6 lg:col-start-7 flex flex-col gap-6">
+                    <p class="text-lg text-on-surface-variant leading-relaxed">Doko International Hotel is a beacon of refined hospitality in Minna, blending heritage with international standards since 1998. Every detail is curated to provide supreme tranquility and understated luxury for discerning travelers and local connoisseurs alike.</p>
+                    <p class="text-lg text-on-surface-variant leading-relaxed">Whether you're here for business, leisure, or a family gathering, our team ensures your stay is seamless and memorable.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- FEATURED ROOMS -->
+        <section class="py-24 md:py-32 px-6 md:px-12 max-w-[1440px] mx-auto" id="rooms-preview">
+            <div class="text-center mb-20">
+                <p class="text-secondary font-medium tracking-widest uppercase text-xs mb-6">Accommodation</p>
+                <h2 class="font-headline-md text-4xl md:text-5xl text-primary mb-6">Featured rooms</h2>
+                <p class="text-on-surface-variant max-w-2xl mx-auto text-lg md:text-xl leading-relaxed">A glimpse of the refined spaces waiting for you</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                <!-- Standard Gateway -->
+                <div class="premium-card bg-white rounded-2xl overflow-hidden border border-surface-variant/20 shadow-sm">
+                    <img alt="Standard Gateway room" class="w-full h-72 object-cover transition-transform duration-700 hover:scale-105" loading="lazy" width="600" height="288" src="https://lh3.googleusercontent.com/aida-public/AB6AXuApHbE1PsXxMS7RqZIofzZaMmENS1VHY-5QAgVh6uemOL2hJHzOtBFw-7v-54UWJ0bpJDC0GK4RqEOeTUfILMkxK5L6tPplItrZ6OYU-fr7d1h_Y1uOwUn1Y-4mFxjKAUec46wxCqEkigIUw3kJvzs7CVJR5uSisaAjaKH1gMHIjJeemxnnrX1L8H2KxqrzKYFYOrQ-_ql01fMB_vtjoBasgu0siPSc6LSpc7i-yR_hNqZTyOpoMnBWVlWlBPrylQAv2sKkoIiGzUk" />
+                    <div class="p-8 flex flex-col gap-6">
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <h3 class="font-semibold text-primary text-xl">Standard Gateway</h3>
+                                <p class="text-sm text-on-surface-variant flex items-center gap-3 mt-1">
+                                    <span class="material-symbols-outlined text-[18px]">group</span> 2 Guests
+                                    <span class="material-symbols-outlined text-[18px]">wifi</span> Free Wi‑Fi
+                                </p>
+                            </div>
+                            <div class="text-right"><span class="text-xl font-semibold text-secondary">₦10,000</span><span class="text-xs text-on-surface-variant block">per night</span></div>
+                        </div>
+                        <a href="booking.html?room=standard" class="btn-secondary py-3 text-sm text-center">Book now</a>
+                    </div>
+                </div>
+                <!-- Executive Suite -->
+                <div class="premium-card bg-white rounded-2xl overflow-hidden border border-surface-variant/20 shadow-sm">
+                    <img alt="Executive Suite" class="w-full h-72 object-cover transition-transform duration-700 hover:scale-105" loading="lazy" width="600" height="288" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDAL1zqV5th3mTDf5-m1eWCuGNsesxJJWkP8Qd8VlGaQvT22Y_YynPBUzUSFTy06femVzuFI3pGFZVwGul19Nb183eEdLE31CpCE5c6gr933ER4n5brVwLMObqZbFXFZ29M38xkf-nxy6TK8XsS3roZwUZPiOLg9VJcN3WS5X-gH9WetUbFPdiLJ9MkChu723erTNiLSbTQUyEdtGFKtUzPBPiy0ew60cD6COzmrkXy_4zhXOY7IYx05Q3qGxp_KJRnHL_QW_Rgy8U" />
+                    <div class="p-8 flex flex-col gap-6">
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <h3 class="font-semibold text-primary text-xl">Executive Suite</h3>
+                                <p class="text-sm text-on-surface-variant flex items-center gap-3 mt-1">
+                                    <span class="material-symbols-outlined text-[18px]">group</span> 3 Guests
+                                    <span class="material-symbols-outlined text-[18px]">king_bed</span> King bed
+                                </p>
+                            </div>
+                            <div class="text-right"><span class="text-xl font-semibold text-secondary">₦15,000</span><span class="text-xs text-on-surface-variant block">per night</span></div>
+                        </div>
+                        <a href="booking.html?room=executive" class="btn-secondary py-3 text-sm text-center">Book now</a>
+                    </div>
+                </div>
+                <!-- Conference Suite -->
+                <div class="premium-card bg-white rounded-2xl overflow-hidden border border-surface-variant/20 shadow-sm">
+                    <img alt="Conference Suite" class="w-full h-72 object-cover transition-transform duration-700 hover:scale-105" loading="lazy" width="600" height="288" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDIwIbgqatk_OjVoRWhCA5dUKrC0R7de0AzYPozdGAosHR8uhcA4GLs269Xy1-0YFtEkKfhKjBgXyDiJ-2F-JIUvF3AvQN0PxbxzQRBYK6cNIGHEc49f51k1ktiQBUUvpVc50uGSHEUJAvuKOYnaTYTwl4twUpFlKzemMAFf0HxStXL44KSWvySw264RjzmFavT4RRB3iuuhNuHqOALcsGzv_auOPO_2tzbQ2hoiBUAGNdQGexWSRKn38qQZnXQ16-wkQCy2e915SA" />
+                    <div class="p-8 flex flex-col gap-6">
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <h3 class="font-semibold text-primary text-xl">Conference Suite</h3>
+                                <p class="text-sm text-on-surface-variant flex items-center gap-3 mt-1">
+                                    <span class="material-symbols-outlined text-[18px]">meeting_room</span> 20 people
+                                    <span class="material-symbols-outlined text-[18px]">tv</span> A/V setup
+                                </p>
+                            </div>
+                            <div class="text-right"><span class="text-xl font-semibold text-secondary">Custom</span><span class="text-xs text-on-surface-variant block">Inquire</span></div>
+                        </div>
+                        <a href="booking.html?room=conference" class="btn-secondary py-3 text-sm text-center">Inquire now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-16 text-center">
+                <a href="rooms.html" class="btn-primary inline-flex items-center gap-3 px-10 py-4 text-base">View all rooms <span class="material-symbols-outlined">arrow_forward</span></a>
+            </div>
+        </section>
+
+        <!-- SERVICES -->
+        <section class="py-24 md:py-32 px-6 md:px-12 bg-surface-container-low" id="services">
+            <div class="max-w-[1440px] mx-auto">
+                <div class="text-center mb-20">
+                    <p class="text-secondary font-medium tracking-widest uppercase text-xs mb-6">What we offer</p>
+                    <h2 class="font-headline-md text-4xl md:text-5xl text-primary mb-6">Featured services</h2>
+                    <p class="text-on-surface-variant max-w-2xl mx-auto text-lg md:text-xl leading-relaxed">Everything you need for a comfortable and productive stay</p>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Restaurant -->
+                    <div class="premium-card p-8 bg-white rounded-2xl border border-surface-variant/10 shadow-sm flex flex-col items-start gap-5"><div class="w-14 h-14 rounded-full bg-surface-container-low flex items-center justify-center"><span class="material-symbols-outlined text-3xl text-secondary">restaurant</span></div><h3 class="font-semibold text-primary text-xl">Restaurant</h3><p class="text-sm text-on-surface-variant leading-relaxed">Exquisite dining and crafted cocktails.</p></div>
+                    <!-- Conference/Event Hall -->
+                    <div class="premium-card p-8 bg-white rounded-2xl border border-surface-variant/10 shadow-sm flex flex-col items-start gap-5"><div class="w-14 h-14 rounded-full bg-surface-container-low flex items-center justify-center"><span class="material-symbols-outlined text-3xl text-secondary">event</span></div><h3 class="font-semibold text-primary text-xl">Conference/Event Hall</h3><p class="text-sm text-on-surface-variant leading-relaxed">Modern spaces for meetings and celebrations.</p></div>
+                    <!-- Free Wi-Fi -->
+                    <div class="premium-card p-8 bg-white rounded-2xl border border-surface-variant/10 shadow-sm flex flex-col items-start gap-5"><div class="w-14 h-14 rounded-full bg-surface-container-low flex items-center justify-center"><span class="material-symbols-outlined text-3xl text-secondary">wifi</span></div><h3 class="font-semibold text-primary text-xl">Free Wi‑Fi</h3><p class="text-sm text-on-surface-variant leading-relaxed">High‑speed internet throughout the property.</p></div>
+                    <!-- Laundry -->
+                    <div class="premium-card p-8 bg-white rounded-2xl border border-surface-variant/10 shadow-sm flex flex-col items-start gap-5"><div class="w-14 h-14 rounded-full bg-surface-container-low flex items-center justify-center"><span class="material-symbols-outlined text-3xl text-secondary">local_laundry_service</span></div><h3 class="font-semibold text-primary text-xl">Laundry</h3><p class="text-sm text-on-surface-variant leading-relaxed">Prompt garment care during your stay.</p></div>
+                    <!-- Parking -->
+                    <div class="premium-card p-8 bg-white rounded-2xl border border-surface-variant/10 shadow-sm flex flex-col items-start gap-5 lg:col-start-2"><div class="w-14 h-14 rounded-full bg-surface-container-low flex items-center justify-center"><span class="material-symbols-outlined text-3xl text-secondary">local_parking</span></div><h3 class="font-semibold text-primary text-xl">Parking</h3><p class="text-sm text-on-surface-variant leading-relaxed">Complimentary onsite parking for guests.</p></div>
+                    <!-- 24/7 Electricity -->
+                    <div class="premium-card p-8 bg-white rounded-2xl border border-surface-variant/10 shadow-sm flex flex-col items-start gap-5"><div class="w-14 h-14 rounded-full bg-surface-container-low flex items-center justify-center"><span class="material-symbols-outlined text-3xl text-secondary">electric_bolt</span></div><h3 class="font-semibold text-primary text-xl">24/7 Electricity</h3><p class="text-sm text-on-surface-variant leading-relaxed">Uninterrupted power supply for your comfort.</p></div>
+                    <!-- Room Service -->
+                    <div class="premium-card p-8 bg-white rounded-2xl border border-surface-variant/10 shadow-sm flex flex-col items-start gap-5"><div class="w-14 h-14 rounded-full bg-surface-container-low flex items-center justify-center"><span class="material-symbols-outlined text-3xl text-secondary">room_service</span></div><h3 class="font-semibold text-primary text-xl">Room Service</h3><p class="text-sm text-on-surface-variant leading-relaxed">Round‑the‑clock dining delivered to your door.</p></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- WHY CHOOSE US -->
+        <section class="py-24 md:py-32 px-6 md:px-12 max-w-[1440px] mx-auto">
+            <div class="text-center mb-20">
+                <p class="text-secondary font-medium tracking-widest uppercase text-xs mb-6">Why choose us</p>
+                <h2 class="font-headline-md text-4xl md:text-5xl text-primary mb-6">What sets us apart</h2>
+                <p class="text-on-surface-variant max-w-2xl mx-auto text-lg md:text-xl leading-relaxed">We go beyond a place to sleep — we craft experiences that linger long after checkout.</p>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="premium-card p-8 bg-white rounded-2xl border border-surface-variant/10 shadow-sm text-center"><div class="w-14 h-14 rounded-full bg-surface-container-low flex items-center justify-center mx-auto mb-6"><span class="material-symbols-outlined text-3xl text-secondary">star</span></div><h4 class="font-semibold text-primary text-lg mb-2">Consistent quality</h4><p class="text-sm text-on-surface-variant leading-relaxed">550+ glowing reviews and a 5‑star rating speak for themselves.</p></div>
+                <div class="premium-card p-8 bg-white rounded-2xl border border-surface-variant/10 shadow-sm text-center"><div class="w-14 h-14 rounded-full bg-surface-container-low flex items-center justify-center mx-auto mb-6"><span class="material-symbols-outlined text-3xl text-secondary">location_on</span></div><h4 class="font-semibold text-primary text-lg mb-2">Prime location</h4><p class="text-sm text-on-surface-variant leading-relaxed">Perfectly situated at City Gate Mx, Minna — your gateway to the city.</p></div>
+                <div class="premium-card p-8 bg-white rounded-2xl border border-surface-variant/10 shadow-sm text-center"><div class="w-14 h-14 rounded-full bg-surface-container-low flex items-center justify-center mx-auto mb-6"><span class="material-symbols-outlined text-3xl text-secondary">handshake</span></div><h4 class="font-semibold text-primary text-lg mb-2">Local expertise</h4><p class="text-sm text-on-surface-variant leading-relaxed">Deep roots in Minna — we connect you with authentic experiences.</p></div>
+                <div class="premium-card p-8 bg-white rounded-2xl border border-surface-variant/10 shadow-sm text-center"><div class="w-14 h-14 rounded-full bg-surface-container-low flex items-center justify-center mx-auto mb-6"><span class="material-symbols-outlined text-3xl text-secondary">favorite</span></div><h4 class="font-semibold text-primary text-lg mb-2">Family‑run warmth</h4><p class="text-sm text-on-surface-variant leading-relaxed">Personalised care from a team that treats you like family.</p></div>
+            </div>
+        </section>
+
+        <!-- TESTIMONIALS -->
+        <section class="py-24 md:py-32 px-6 md:px-12 bg-surface-container-low">
+            <div class="max-w-[1440px] mx-auto text-center">
+                <span class="material-symbols-outlined text-secondary text-5xl mb-8 block">format_quote</span>
+                <div id="testimonial-carousel" class="relative">
+                    <div class="testimonial-fade opacity-100" id="testimonial-text">
+                        <p class="font-headline-md text-4xl md:text-5xl text-primary italic mb-6 leading-tight">"The standard for hospitality in Niger State. Impeccable service."</p>
+                        <p class="text-sm text-on-surface-variant uppercase tracking-widest">Guest Experience</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="py-24 md:py-32 px-6 md:px-12 max-w-[1440px] mx-auto text-center">
+            <p class="text-secondary font-medium tracking-widest uppercase text-xs mb-6">Reservations</p>
+            <h2 class="font-headline-md text-4xl md:text-5xl text-primary mb-6">Ready to experience Minna’s finest?</h2>
+            <p class="text-on-surface-variant max-w-2xl mx-auto text-lg md:text-xl mb-12 leading-relaxed">Book your stay and let us create an unforgettable experience for you.</p>
+            <a href="booking.html" class="btn-primary inline-flex items-center gap-4 px-12 py-5 text-lg"><span class="material-symbols-outlined">calendar_month</span> Make a reservation</a>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-surface-container-low pt-28 pb-16 px-6 md:px-12 border-t border-outline-variant/10">
+        <div class="max-w-[1440px] mx-auto grid grid-cols-1 md:grid-cols-12 gap-16">
+            <div class="md:col-span-5 flex flex-col gap-8">
+                <span class="font-headline-md text-4xl text-primary">Doko International</span>
+                <p class="text-on-surface-variant max-w-xs leading-relaxed text-base">Refined hospitality bridging heritage and modern luxury in the heart of Minna.</p>
+                <p class="text-sm text-on-surface-variant/70 mt-2">© 2026 Doko International Hotel. All rights reserved.</p>
+            </div>
+            <div class="md:col-span-4 md:col-start-7 flex flex-col gap-6">
+                <h4 class="font-semibold text-primary uppercase tracking-widest text-xs">Pages</h4>
+                <ul class="space-y-4">
+                    <li><a class="text-on-surface-variant hover:text-secondary transition-colors text-base" href="index.html">Home</a></li>
+                    <li><a class="text-on-surface-variant hover:text-secondary transition-colors text-base" href="rooms.html">Rooms</a></li>
+                    <li><a class="text-on-surface-variant hover:text-secondary transition-colors text-base" href="gallery.html">Gallery</a></li>
+                    <li><a class="text-on-surface-variant hover:text-secondary transition-colors text-base" href="booking.html">Booking</a></li>
+                    <li><a class="text-on-surface-variant hover:text-secondary transition-colors text-base" href="about.html">About</a></li>
+                    <li><a class="text-on-surface-variant hover:text-secondary transition-colors text-base" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="md:col-span-3 flex flex-col gap-6">
+                <h4 class="font-semibold text-primary uppercase tracking-widest text-xs">Connect</h4>
+                <div class="flex gap-5">
+                    <a class="w-11 h-11 rounded-full border border-secondary/20 flex items-center justify-center text-secondary hover:bg-secondary hover:text-white transition-all" href="#" aria-label="Facebook"><svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"/></svg></a>
+                    <a class="w-11 h-11 rounded-full border border-secondary/20 flex items-center justify-center text-secondary hover:bg-secondary hover:text-white transition-all" href="#" aria-label="Instagram"><svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="fixed bottom-10 right-10 z-50">
+        <a href="https://wa.me/2348038134832?text=Hello%20Doko%20International%20Hotel%2C%20I%20would%20like%20to%20make%20a%20booking." target="_blank" rel="noopener noreferrer" aria-label="Contact on WhatsApp" class="bg-secondary text-white rounded-full p-4 shadow-lg hover:shadow-xl hover:scale-105 transition-all flex items-center gap-2 group"><svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg><span class="hidden group-hover:inline-block text-sm font-medium whitespace-nowrap pr-1">WhatsApp</span></a>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

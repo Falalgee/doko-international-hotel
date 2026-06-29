@@ -1,0 +1,77 @@
+/* ========== BASE & HELPERS ========== */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+}
+.material-symbols-outlined.fill {
+  font-variation-settings: 'FILL' 1, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+}
+
+/* Luxury form inputs */
+.luxury-input {
+  @apply w-full bg-transparent border-0 border-b border-outline-variant/60 focus:border-secondary focus:ring-0 px-0 py-4 font-body-md text-on-surface placeholder-on-surface-variant/40 transition-all duration-300 rounded-none;
+}
+.luxury-select {
+  @apply w-full bg-transparent border-0 border-b border-outline-variant/60 focus:border-secondary focus:ring-0 px-0 py-4 font-body-md text-on-surface transition-all duration-300 rounded-none cursor-pointer;
+}
+
+/* Date input placeholder color fallback */
+input[type="date"]::-webkit-datetime-edit-text,
+input[type="date"]::-webkit-datetime-edit-month-field,
+input[type="date"]::-webkit-datetime-edit-day-field,
+input[type="date"]::-webkit-datetime-edit-year-field {
+  color: #9ca3af;
+}
+input[type="date"]:focus::-webkit-datetime-edit-text,
+input[type="date"]:focus::-webkit-datetime-edit-month-field,
+input[type="date"]:focus::-webkit-datetime-edit-day-field,
+input[type="date"]:focus::-webkit-datetime-edit-year-field {
+  color: #1c1b1b;
+}
+
+/* Ken Burns hero effect */
+.hero-bg-animate {
+  animation: kenBurns 20s ease-in-out infinite alternate;
+}
+@keyframes kenBurns {
+  from { transform: scale(1); }
+  to { transform: scale(1.08); }
+}
+
+/* Testimonial fade */
+.testimonial-fade {
+  transition: opacity 0.8s ease-in-out;
+}
+
+/* ========== PREMIUM REFINEMENTS ========== */
+/* Smooth card hover lift */
+.premium-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.premium-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px -8px rgba(0,0,0,0.08), 0 4px 8px rgba(0,0,0,0.04);
+}
+
+/* Solid navigation (no transparency) */
+.glass-nav {
+  background: #fcf9f8; /* surface color, fully opaque */
+  box-shadow: 0 1px 0 rgba(0,0,0,0.04); /* subtle bottom edge */
+}
+
+/* Subtle hero overlay gradient */
+.hero-overlay {
+  background: linear-gradient(to top, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0.1) 60%, rgba(0,0,0,0.2) 100%);
+}
+
+/* Modern button hover effect */
+.btn-primary {
+  @apply bg-primary text-white font-medium rounded-full transition-all duration-300 shadow-sm hover:shadow-md hover:brightness-110;
+}
+.btn-secondary {
+  @apply border-2 border-secondary text-secondary font-medium rounded-full transition-all duration-300 hover:bg-secondary hover:text-white shadow-sm;
+}
